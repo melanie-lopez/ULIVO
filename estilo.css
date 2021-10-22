@@ -1,0 +1,518 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@media(min-width:1000px){
+
+    .contenedor{
+    
+        
+    background-image: url(imagenes/platodepasta.jpg) ;
+    background-repeat: no-repeat;
+    background-attachment:scroll;
+    background-size:cover;
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    
+}
+
+.frase{
+    z-index: 2000;
+    position: absolute;
+    transform: translateX(0%) translateY(10%);
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Style Script', cursive;
+}
+
+
+
+
+.seccion2 {
+
+   display: block;
+    text-align: justify;
+    background-color: blanchedalmond;
+    width: 100%;
+    margin-top: 0;
+    padding-top: 0;
+    height: 25vh;
+
+}
+.row{
+    margin: 0;
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+    
+    justify-content: space-evenly;
+    background-color:#F5EFCC;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: 'Andada Pro', serif;
+    padding: 50px;
+
+}
+.row .columna{
+    justify-content: center;
+    text-align: center;
+}
+.row img{
+    width: 60%;
+    height: 300px;
+}
+
+.row2{
+    margin: 0;
+    display: grid;
+    grid-template-columns: 500px 500px;
+    
+    justify-content: space-evenly;
+    background-color:#F5EFCC;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: 'Andada Pro', serif;
+    padding: 50px;
+
+}
+.row2 .columna{
+    justify-content: center;
+    text-align: center;
+}
+
+ .row2 img{
+ width: 60%;
+ height: 300px;
+ 
+}
+.galeria{
+    display: flex;
+    flex:row;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+.galeria div{
+    padding: 30px 60px;
+}
+.galeria div li{
+    padding-top: 30px;
+
+}
+
+.enlace{
+    position:absolute;
+    padding: 0px;
+}
+.logo{
+    
+    height: 6vh;
+    float:left;
+    margin-top: 3px;
+    padding: 2px;
+    margin-left: 10px;
+    
+}
+.menu ul {
+
+    margin:0;
+    list-style:  none;
+   padding: 0;
+   display: flex;
+   justify-content: flex-end;
+   flex-direction: row;
+  
+   
+    
+}
+
+.menu li a {
+    
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    border-radius: 3px ;
+    justify-content: space-around;
+    width: 50%;
+}
+
+#menu-bar{ 
+   display: none; 
+}
+
+
+header label{
+    
+    float: right;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    border-right: 1px;
+    display: none;
+    
+}
+
+header label:hover{
+    cursor:pointer;
+    background-color: rgba(0,0,0,0.3);
+}
+
+.menu li:hover {
+    background-color: #631F18;
+
+}
+
+
+.footer{
+    display: block;
+    background-color: #631F18;
+    color: white;
+    height:30%;
+    width: 100%;
+    margin: 0;
+    padding:20px;
+
+}
+
+}
+
+
+@media (max-width:480px){
+
+    .contenedor {
+        width: 100%;
+        height: 50px;
+        background-color:rgba(0,0,0,0.8);
+        color: white;
+    }
+
+    .cabecera {
+        width: 100%;
+        height: 50px;
+       background-color: rgba(0,0,0,0.8);
+       color: white;
+
+    }
+    #menu-bar{
+        display: none;
+    }
+    
+    .logo{
+       
+        margin-top: 0px;
+        height: 40px;
+    }
+    
+  
+    header label{
+        cursor: pointer;
+        display: flex;
+        justify-content: flex-end;
+        background-color: rgba(0,0,0,0.3);
+        height: 50px;
+        padding: 10px;
+        border: 1px 1px 1px 1px solid white;
+
+    }
+    .menu {
+
+        z-index: 2000;
+        position: absolute;
+        transition: all 0.5s;
+         width: 60%;
+        margin-left:-70%;
+        font-size: 14px;
+    
+    }
+
+    .menu ul{
+        flex-direction: column;
+
+    }
+
+    .menu .lista{
+       background-color: rgba(0,0,0,0.8);
+    }
+    .menu .lista li {
+    
+        z-index: 2000;
+        cursor: pointer;
+        padding: 14px;
+        border-top: 2px solid #631F18;
+    }
+    .menu .lista a{
+        text-decoration: none;
+        list-style: none;
+        color: white;
+        text-transform: uppercase;
+    }
+   
+    .menu li:hover {
+        cursor: pointer;
+       background-color: rgb(207, 180, 180);
+       z-index: 2000;
+        
+    }
+
+    #menu-bar:checked ~ .menu{
+        margin:0;  
+
+    }
+    .contenedor{
+    
+        
+        background-image: url(imagenes/platodepasta.jpg) ;
+        background-repeat: no-repeat;
+        background-attachment:scroll;
+        background-size:cover;
+        width: 100%;
+        height: 100vh;
+        background-position: center;
+        
+    }
+    
+        .frase{
+    
+        width: 95%;
+        color: white;
+        position: absolute;
+        font-weight: bold;
+        z-index: 1500;
+        top:43%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        font-family:'Carattere', cursive;
+        font-size:32px;
+        text-align: center;
+        letter-spacing: 0.1rem;
+        word-spacing: 0.8rem;
+       
+    
+     
+    }
+    
+    .seccion2{
+
+        display:block;
+        background-color:#F5EFCC;
+        text-align: center;
+        padding:  25px;
+           
+    }
+   
+    .titulo{
+        
+        padding: 15px 10px;
+        color: #631F18;
+        font-family: 'Andada Pro', serif;
+        text-transform: uppercase;
+        transition-duration: 0.5s;
+
+    }
+    #texto{
+        text-align: center;
+        padding: 20px 20px;
+        font-family: 'Andada Pro', serif;
+        color: black;
+        font-size: 16px;
+        
+
+    }
+
+    .row{
+        margin: 0;
+        display: grid;
+        
+        grid-template-columns: 400px;
+        padding:30px ;
+        padding-bottom: 50px;
+        background-color:#F5EFCC;
+        text-decoration: none;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-family: 'Andada Pro', serif;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .row div{
+        color:#631F18;
+        padding: 10px;
+        justify-self: center;
+        text-align: center;
+    }
+   
+    .row2{
+        margin: 0;
+        display: grid;
+        grid-template-columns: 200px;
+        padding:30px ;
+        padding-bottom: 50px;
+        
+        background-color:#F5EFCC;
+        text-decoration: none;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-family: 'Andada Pro', serif;
+       justify-content: center;
+       align-items: center;
+    
+    }
+    .row2 div{
+        color:#631F18;
+        padding: 10px;
+        justify-self: center;
+        text-align: center;
+    }
+    
+     .row2 img{
+     width: 60%;
+     height: 300px;
+     
+    }
+    
+
+      .sectionn, .galeria h2{
+        color:#631F18;
+        padding: 10px;
+        text-decoration: none;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-family: 'Andada Pro', serif;
+        text-align:center;
+
+        
+    }
+     
+     .sectionn, .galeria{
+
+        padding: 40px ;
+        position: relative;
+         width: 100%;
+         height: 100vh;
+         background-color:#F5EFCC;
+         display: flex;
+         flex-direction: column;
+        align-items: center;
+        justify-content: center;
+       
+ 
+     }
+    .galeria img{
+        padding: 20px;
+    }
+    
+    .box{
+        
+        width: 100%;
+        height: 250px;
+        text-align: center;
+        overflow: hidden;
+        justify-content: center;
+        position: relative;
+        border-radius: 10px;
+        
+    }
+
+    .box img{
+       
+        width: 100%;
+        height: 100%;
+        margin: 1%;
+        object-fit: cover;
+        justify-content: center;
+        
+      
+    }
+    .box .hover{
+        width: 0%;
+        height: 250px;
+        background-color: rgb(153, 145, 145, 0.6);
+        position: absolute;
+        top: 0;
+        overflow: hidden;
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        text-align: center;
+        
+    }
+    .hover h3{
+        color: white;
+        font-size: 1em;
+        text-transform: uppercase;
+        text-align: center;
+        text-decoration: none;
+       
+    }
+
+    .box:hover .hover{
+        
+        width: 100%;
+        background-color: rgb(153, 145, 145, 0.4);
+        transition: all 0.6s;
+        
+        
+    }*/
+    .iconos {
+        text-align: center;
+        padding: 25px 20px;
+
+    }
+    .iconos .lista li{
+        list-style: none;
+        padding: 20px;
+        text-align: left;
+        padding: 20px 20px;
+        font-family: 'Andada Pro', serif;
+        color: black;
+       
+    }
+
+
+    .container{
+        padding:80px 40px;
+        background-color: #631F18;
+        color: white;
+    }
+    .footer {
+
+        position: absolute;
+        background-color: #631F18;
+        color: white;
+    
+        height: 50vh;
+        padding:30px 20px;
+        text-align: center;
+        width: 100%;
+    }
+    .horarios{
+        text-align: center;
+        padding: 30px;
+    }
+
+    
+}
+    
+   
+
+
+
+
+
+
+
+
+
+
+
