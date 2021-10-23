@@ -49,8 +49,7 @@
     margin: 0;
     display: grid;
     grid-template-columns: 400px 400px 400px;
-    
-    justify-content: space-evenly;
+  justify-content: space-evenly;
     background-color:#F5EFCC;
     text-decoration: none;
     text-transform: uppercase;
@@ -72,7 +71,6 @@
     margin: 0;
     display: grid;
     grid-template-columns: 500px 500px;
-    
     justify-content: space-evenly;
     background-color:#F5EFCC;
     text-decoration: none;
@@ -173,15 +171,27 @@ header label:hover{
 }
 
 
-.footer{
-    display: block;
-    background-color: #631F18;
-    color: white;
-    height:30%;
-    width: 100%;
+.row3{
     margin: 0;
-    padding:20px;
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+    justify-content: space-evenly;
+    background-color:#631F18;
+    color: white;
+    text-decoration: none;
+    font-family: 'Andada Pro', serif;
+    padding: 50px;
 
+}
+.row3 .columna{
+   align-items: center;
+   text-align: center;
+}
+.row3 .columna a{
+    
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
 }
 
 }
@@ -481,26 +491,37 @@ header label:hover{
 
 
     .container{
-        padding:80px 40px;
+        padding:40px 20px;
         background-color: #631F18;
         color: white;
     }
-    .footer {
-
-        position: absolute;
-        background-color: #631F18;
+    .row3{
+        margin: 0;
+        display: grid;
+        grid-template-columns: 280px;
+        padding:20px ;
+        padding-bottom: 50px;
         color: white;
+        background-color: #631F18;
+        text-decoration: none;
+        font-family: 'Andada Pro', serif;
+       justify-content: center;
+       align-items: center;
     
-        height: 50vh;
-        padding:30px 20px;
-        text-align: center;
-        width: 100%;
-    }
-    .horarios{
-        text-align: center;
-        padding: 30px;
     }
 
+    .row3 .columna {
+        padding:25px;
+        justify-content: center;
+        text-align: center;
+    }
+    .row3 .columna a{
+    
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+    }
+    
     
 }
     
