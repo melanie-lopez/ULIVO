@@ -148,33 +148,31 @@
     .row{
         margin: 0;
         display: grid;
-        
-        grid-template-columns: auto;
-        padding:30px ;
-        padding-bottom: 50px;
+        grid-template-columns: 1fr;
+        grid-column-gap: 50px;
+        justify-content: space-evenly;
         background-color:#F5EFCC;
         text-decoration: none;
         text-transform: uppercase;
         letter-spacing: 2px;
         font-family: 'Andada Pro', serif;
+        padding: 40px;
         justify-content: center;
         align-items: center;
 
     }
     .row div{
-        color:#631F18;
-        padding: 10px;
-        justify-self: center;
+        justify-content: center;
         text-align: center;
     }
+    
    
     .row2{
+
         margin: 0;
         display: grid;
         grid-template-columns: 1fr;
-        
         padding-bottom: 50px;
-        
         background-color:#F5EFCC;
         text-decoration: none;
         text-transform: uppercase;
@@ -191,12 +189,7 @@
         text-align: center;
     }
     
-     .row2 img{
-     
-     height: max-content;
-     
-    }
-    
+   
 
       h2{
         color:#631F18;
@@ -253,11 +246,11 @@
     }
     
     .box{
-        
+        z-index: 1000;
         width: 100%;
-        height: 250px;
+        height: max-content;
         text-align: center;
-        overflow: hidden;
+        /*overflow: hidden;*/
         justify-content: center;
         position: relative;
         border-radius: 10px;
@@ -267,45 +260,39 @@
     .box img{
        
         width: 100%;
-        height: 100%;
-        margin: 1%;
         object-fit: cover;
         justify-content: center;
-        
+        opacity: 0.6;
+     
       
     }
     .box .hover{
-        width: 0%;
-        height: 250px;
-        background-color: rgb(153, 145, 145, 0.6);
+        
+        width: 100%;
+        height: 100%;
         position: absolute;
         top: 0;
-        overflow: hidden;
+        overflow:visible;
         display: flex;
         justify-content:center;
         align-items: center;
         text-align: center;
-        left:-13%;
+        
         
     }
     .hover a{
-        color: white;
+        color: black;
         font-size: 1em;
         text-transform: uppercase;
         text-align: center;
         text-decoration: none;
        
+        width: 100%;
+
+       
     }
 
-    .box:hover .hover{
-        
-        width: 100%;
-        background-color: rgb(153, 145, 145, 0.4);
-        transition: all 0.6s;
-        left: 1%;
-        
-        
-    }*/
+   
     .iconos {
         text-align: center;
         padding: 25px 20px;
@@ -329,7 +316,15 @@
         font-size: 20px;
         text-align: center;
     }
+    
+    
+  
+
+    .row3 .columna img{
+        height: 80px;
+    }
     .row3{
+        height:50vh;
         margin: 0;
         display: grid;
         grid-template-columns: auto;
@@ -341,11 +336,12 @@
         font-family: 'Andada Pro', serif;
        justify-content: center;
        align-items: center;
+       width: 100%;
     
     }
 
     .row3 .columna {
-        padding:25px;
+        padding:10px;
         justify-content: center;
         text-align: center;
         align-items: center;
@@ -354,12 +350,13 @@
     
         text-decoration: none;
         color: white;
-        font-size: 20px;
+        font-size: 10px;
     }
 
     .link{
         width: 70%;
         text-decoration: none;
+        text-align: center;
 
     }
     .logoPrincipal{
@@ -711,7 +708,7 @@
     }
 
     .row3 .columna {
-        padding:25px;
+        padding:15px;
         justify-content: center;
         text-align: center;
         align-items: center;
@@ -735,7 +732,7 @@
     
     
 }
-@media(min-width: 769px) and (max-width: 1280px) {
+@media(min-width: 769px) {
     
     /*HEADER*/
     .contenedor{
